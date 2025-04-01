@@ -7,6 +7,10 @@ body{
     background-color: #fff;
 }
 
+.container .company-name{
+    text-align: center;
+    margin-left: -150px;
+}    
 .container{
     margin: 50px 100px;
     display: grid;
