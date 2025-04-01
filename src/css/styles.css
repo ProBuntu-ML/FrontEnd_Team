@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+
+.container{
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50vh;
+    justify-content: space-between;
+}
+
+.container .right h4{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-block-end: 2.0rem;
+}
+.container .right h5{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-block-end: 2.0rem;
+}
+
+.container .right .staff-name-div input{
+    font-size: 1.0rem;
+    padding: 15px 20px;
+    width: 70%;
+}
+.container .right .staff-name-div{
+    margin-block-end: 3.0rem;
+}
+
+.container .right .password input{
+    padding: 15px 20px;
+    width: 70%;
+    font-size: 1.0rem;
+}
+
+.container .right .down-input span a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: darkblue;
+}
+.container .right .down-input span{
+    margin-left: 248px;
+}
+
+.container .right .login{
+    padding: 15px 20px;
+    color: #fff;
+    background-color: darkblue;
+    width: 70%;
+    
+}
+
+.container .right .login:hover{
+    cursor: pointer;
+}
