@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Plate Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <button class="menu-btn">☰</button>
+        <span>LICENSE PLATE VERIFICATION</span>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="Officer Profile">
+                <p>LEVEL 2 OFFICER<br>Andrew Smith</p>
+            </div>
+            <ul class="menu">
+                <li class="active">Dashboard</li>
+                <li><a href="./scan-license.html">Scan License</a></li>
+                <li><a href="./reports.html">Reports</a></li>
+                <li>Setting</li>
+                <li>Log Out</li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section class="reports">
+                <h2>Reports</h2>
+                <div class="filters">
+                    <input type="text" placeholder="Search for License">
+                    <select>
+                        <option>Valid</option>
+                        <option>Expired</option>
+                        <option>Under Review</option>
+                        <option>Flagged</option>
+                    </select>
+                    <input type="month">
+                    <select>
+                        <option>Okada</option>
+                        <option>Car</option>
+                        <option>Truck</option>
+                    </select>
+                    <button class="download-btn">Download PDF</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>License Plate</th>
+                            <th>Color</th>
+                            <th>Vehicle Owner</th>
+                            <th>Insurance Status</th>
+                            <th>Verification Status</th>
+                            <th>Vehicle Type</th>
+                            <th>Location</th>
+                            <th>Date Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FYY 622 DO</td>
+                            <td>White</td>
+                            <td>Ademiy Taiwo Daniel</td>
+                            <td class="expired">27/09/2023</td>
+                            <td class="valid">Valid</td>
+                            <td>Valid</td>
+                            <td>Valid</td>
+                            <td>Unknown</td>
+                        </tr>
+                        <tr>
+                            <td>FYY 622 DO</td>
+                            <td>White</td>
+                            <td>Ademiy Taiwo Daniel</td>
+                            <td class="expired">31/12/2025</td>
+                            <td class="expired">Expired</td>
+                            <td>Expired</td>
+                            <td>Expired</td>
+                            <td>Expired</td>
+                        </tr>
+                        <tr>
+                            <td>FYY 622 DO</td>
+                            <td>White</td>
+                            <td>Ademiy Taiwo Daniel</td>
+                            <td class="flagged">Flagged</td>
+                            <td class="flagged">Flagged</td>
+                            <td class="flagged">Flagged</td>
+                            <td class="flagged">Flagged</td>
+                            <td class="flagged">Flagged</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.top-nav {
+    background: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.top-nav .menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background: #4d2c0d;
+    width: 220px;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+.sidebar .menu li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar .menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+    .sidebar .menu .active {
+    background: #654321;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.reports h2 {
+    margin-bottom: 15px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters input, .filters select, .filters button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filters .download-btn {
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table .valid {
+    color: green;
+    font-weight: bold;
+}
+
+table .expired {
+    color: red;
+    font-weight: bold;
+}
+
+table .flagged {
+    color: orange;
+    font-weight: bold;
+}
+
+    </style>
+</body>
+</html>
+
+/* styles.css */
