@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scan License</title>
+    <link rel="stylesheet" href="scan-style.css" />
+</head>
+
+<body>
+
+    <div class="scan-container">
+        <h2>License Plate Verification</h2>
+        <p>Scan a license plate to verify its status</p>
+
+        <div class="scanner-box">
+            <div class="scan-area">
+                <p>Camera Feed (Simulated)</p>
+            </div>
+
+            <button class="scan-btn">Start Scanning</button>
+
+            <div class="manual-input">
+                <label for="plateInput">Or enter license plate manually:</label>
+                <input type="text" id="plateInput" placeholder="Enter license plate..." />
+                <button class="submit-btn">Verify</button>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scan-container {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px 40px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        .scan-container h2 {
+            margin-top: 0;
+        }
+
+        .scan-container p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .scanner-box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .scan-area {
+            height: 250px;
+            background-color: #e6e6e6;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            font-size: 16px;
+        }
+
+        .scan-btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .manual-input {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .manual-input label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .manual-input input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .submit-btn {
+            padding: 8px 16px;
+            background-color: #008000;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+
+</body>
+
+</html>
