@@ -48,7 +48,7 @@ body{
 .container .right .down-input span a{
     font-size: 1.2rem;
     text-decoration: none;
-    color: darkblue;
+    color: #020547;
 }
 .container .right .down-input span{
     margin-left: 248px;
@@ -57,7 +57,7 @@ body{
 .container .right .login{
     padding: 15px 20px;
     color: #fff;
-    background-color: darkblue;
+    background-color: #020547;
     width: 70%;
     
 }
