@@ -1,12 +1,12 @@
 console.log("auth.js loaded");
 
 async function loginUser(email, password) {
-    const res = await fetch("https://51.20.37.222/api/v1/account/token", {
+    const res = await fetch("https://51.20.37.222/api/v1/account/token/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ staff_id:email, password })
     });
 
     const data = await res.json();
@@ -15,13 +15,15 @@ async function loginUser(email, password) {
         localStorage.setItem("access_token", data.access);
         localStorage.setItem("refresh_token", data.refresh);
         alert("Login successful!");
-        window.location.href = "verify.html"; 
+        window.location.href = "dashboard.html"; 
         
         // redirect to verification page
     } else {
         alert("Login failed: " + (data.detail || "Unknown error"));
     }
 }
+
+
 
 document.getElementById("login-form").addEventListener("submit", function (e) {
     e.preventDefault();
