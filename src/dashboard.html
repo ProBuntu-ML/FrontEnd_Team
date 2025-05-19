@@ -1,129 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>License Plate Verification</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background: #f4f4f4;
-        }
-        .navbar {
-            background: #222;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: 600;
-        }
-        .dashboard-header {
-            background: #020547;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        .container {
-            display: flex;
-        }
-        .sidebar {
-            width: 250px;
-            background: #020547;
-            color: white;
-            padding: 20px;
-            height: 100vh;
-        }
-        .sidebar .user-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .sidebar .user-info img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        .sidebar ul {
-            list-style: none;
-        }
-        .sidebar ul li {
-            padding: 10px 0;
-            cursor: pointer;
-        }
-        .main-content {
-            flex: 1;
-            padding: 20px;
-        }
-        .stats {
-            display: flex;
-            justify-content: space-between;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .stats div {
-            text-align: center;
-            font-size: 18px;
-            font-weight: 600;
-        }
-        .vehicles {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .vehicle-card {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-        }
-        .vehicle-card.green {
-            background: #2d5e2d;
-            color: white;
-        }
-        .vehicle-card.brown {
-            background: 0F1587;
-            color: white;
-        }
-    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
+
 <body>
-    <div class="navbar">LICENSE PLATE VERIFICATION</div>
-    <div class="dashboard-header">DASHBOARD</div>
+    <!-- <div class="navbar">LICENSE PLATE VERIFICATION</div> -->
+    <!-- <div class="dashboard-header">DASHBOARD</div> -->
     <div class="container">
         <div class="sidebar">
             <div class="user-info">
-                <img src="user.jpg" alt="User">
+                <img src="./img/pic-3-head-img.png" alt="User">
                 <div>
                     <p>LEVEL 2 OFFICER</p>
                     <p>Andrew Smith</p>
                 </div>
             </div>
             <ul>
-                <li>Dashboard</li>
-                <li>Scan License</li>
-                <li>Reports</li>
-                <li>Setting</li>
+                <li class="active">Dashboard</li>
+                <li><a href="./dashboard2.html">Dashboard2</a></li>
+                <li><a href="./scan-license.html">Scan License</a></li>
+                <li><a href="./reports.html">Reports</a></li>
                 <li>Log Out</li>
             </ul>
         </div>
         <div class="main-content">
             <div class="stats">
-                <div>200<br> Total Vehicles</div>
-                <div>50<br> Flagged Cars</div>
-                <div>19.99 Sec<br> Avg Time</div>
+                <div class="total-vehicles"><i class="fas fa-car"></i>
+                    <p class="total-text">200<br> Total Vehicles</p>
+                </div>
+                <div class="flagged-vehicles"> <i class="fas fa-car"></i>
+                    <p class="flag-text">50<br> Flagged Cars</p>
+                </div>
+                <div class="avg-time"> <i class="fas fa-clock"></i>
+                    <p class="avg-text">19.99 Sec<br> Avg Time</p>
+                </div>
             </div>
             <div class="vehicles">
                 <div class="vehicle-card green">
@@ -151,5 +69,258 @@
             </div>
         </div>
     </div>
+
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+        }
+
+        .navbar {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .dashboard-header {
+            background: #020547;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 220px;
+            background: #0F1587;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        .sidebar .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .user-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+
+
+        .sidebar ul li {
+            list-style: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .sidebar .active {
+            background: #020547;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-around;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .stats div {
+            text-align: center;
+            /* font-size: 18px; */
+            font-weight: 600;
+            /* width: 100%; */
+            width: 80%;
+        }
+
+        .stats div.total-vehicles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #fff;
+        }
+
+        .stats .total-vehicles .total-text {
+            margin-top: 23px;
+            font-size: 1.2rem;
+            color: #000;
+            font-weight: 600;
+            width: 100%;
+            padding: 0;
+
+        }
+
+        .stats .total-vehicles .fa-car {
+            border-radius: 15px;
+            width: 90%;
+            padding: 1.5rem 2.5rem;
+            place-items: center;
+            font-size: 2.5rem;
+            color: darkgreen;
+            background-color: lightgreen;
+        }
+
+
+        .stats div.total-vehicles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #fff;
+        }
+
+
+
+        /* Flagged vehich */
+
+
+
+        .stats div.flagged-vehicles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #fff;
+        }
+
+        .stats .flag-text {
+            margin-top: 23px;
+            font-size: 1.2rem;
+            color: #000;
+            font-weight: 600;
+            width: 100%;
+            padding: 0;
+
+        }
+
+        .stats .flagged-vehicles .fa-car {
+            border-radius: 15px;
+            width: 90%;
+            padding: 1.5rem 2.5rem;
+            place-items: center;
+            font-size: 2.5rem;
+            color: red;
+            /* height: 100%; */
+            background-color: rgb(230, 197, 197);
+        }
+
+
+        .stats div.flagged-vehicles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #fff;
+        }
+
+
+        /* End Flagged */
+
+
+        /* Avg time starts */
+
+
+
+        .stats div.avg-time {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #fff;
+        }
+
+        .stats .avg-text {
+            margin-top: 23px;
+            font-size: 1.2rem;
+            color: #000;
+            font-weight: 600;
+            width: 100%;
+            padding: 0;
+
+        }
+
+        .stats .avg-time .fa-clock {
+            border-radius: 15px;
+            width: 90%;
+            padding: 1.5rem 2.5rem;
+            place-items: center;
+            font-size: 2.5rem;
+            color: darkgoldenrod;
+            /* height: 100%; */
+            background-color: rgb(202, 202, 148);
+        }
+
+
+        .stats div.avg-time {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #fff;
+        }
+
+
+
+
+        /* Avg time starts */
+
+        .vehicles {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .vehicle-card {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .vehicle-card.green {
+            background: #2d5e2d;
+            color: white;
+        }
+
+        .vehicle-card.brown {
+            background: 0F1587;
+            color: white;
+        }
+    </style>
 </body>
+
 </html>
