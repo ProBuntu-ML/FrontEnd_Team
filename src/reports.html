@@ -10,95 +10,163 @@
 
 <body>
 
-    <div class="report-modal">
-        <div class="modal-header">
-            <h2>Comprehensive Report</h2>
-            <p>Summary of an individual detail</p>
-            <span class="close-btn">&times;</span>
-        </div>
+    <div class="container">
 
-        <div class="report-profile">
-            <img src="https://via.placeholder.com/80" alt="User Photo" />
-            <div class="profile-details">
-                <div><strong>Full Name:</strong> John Doe Isaac</div>
-                <div><strong>Contact Address:</strong> No. 21, Lekki Phase 1, Lagos, Nigeria</div>
-                <div><strong>Phone Number:</strong> 08123456789</div>
-                <div><strong>NIN Number:</strong> 12345678901</div>
-                <div><strong>Occupation:</strong> Software Engineer</div>
-                <div><strong>License Number:</strong> DL-12345-67890</div>
-                <div><strong>License Expiry Date:</strong> 30th June 2025</div>
-                <div><strong>Marital Status:</strong> Married</div>
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="./img/pic-4-head-img.png" alt="Officer Profile">
+                <p>LEVEL 2 OFFICER<br>Andrew Smith</p>
             </div>
-        </div>
+            <ul class="menu">
+                <li> <a href="./dashboard.html">Dashboard</a></li>
+                <li ><a href="./dashboard2.html">Dashboard2</a></li>
+                <li><a href="./scan-license.html">Scan License</a></li>
+                <li class="active"><a href="./reports.html">Reports</a></li>
+                <!-- <li>Setting</li> -->
+                <li>Log Out</li>
+            </ul>
+        </aside>
 
-        <div class="tables">
-            <div class="table-section">
-                <h4>Insurance Summary</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>License Plate</th>
-                            <th>Insurance Status</th>
-                            <th>Expiry Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>FYY 692 DO</td>
-                            <td>Valid</td>
-                            <td>12/12/2024</td>
-                        </tr>
-                        <tr>
-                            <td>FYY 692 DO</td>
-                            <td>Expired</td>
-                            <td>Expired</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="main-content">
+            <div class="report-modal">
+            <div class="modal-header">
+                <h2>Comprehensive Report</h2>
+                <p>Summary of an individual detail</p>
+                <span class="close-btn">&times;</span>
             </div>
 
-            <div class="table-section">
-                <h4>Violation History</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>License Plate</th>
-                            <th>Vehicle Type</th>
-                            <th>Violation</th>
-                            <th>Date/Time</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>FYY 692 DO</td>
-                            <td>Valid</td>
-                            <td>Valid</td>
-                            <td>Valid</td>
-                            <td>Valid</td>
-                        </tr>
-                        <tr>
-                            <td>FYY 692 DO</td>
-                            <td>Expired</td>
-                            <td>Expired</td>
-                            <td>Expired</td>
-                            <td>Expired</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="report-profile">
+                <img src="./img/pic-3-head-img.png" alt="User Photo" />
+                <div class="profile-details">
+                    <div><strong>Full Name:</strong> John Doe Isaac</div>
+                    <div><strong>Contact Address:</strong> No. 21, Lekki Phase 1, Lagos, Nigeria</div>
+                    <div><strong>Phone Number:</strong> 08123456789</div>
+                    <div><strong>NIN Number:</strong> 12345678901</div>
+                    <div><strong>Occupation:</strong> Software Engineer</div>
+                    <div><strong>License Number:</strong> DL-12345-67890</div>
+                    <div><strong>License Expiry Date:</strong> 30th June 2025</div>
+                    <div><strong>Marital Status:</strong> Married</div>
+                </div>
+            </div>
+
+            <div class="tables">
+                <div class="table-section">
+                    <h4>Insurance Summary</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>License Plate</th>
+                                <th>Insurance Status</th>
+                                <th>Expiry Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FYY 692 DO</td>
+                                <td>Valid</td>
+                                <td>12/12/2024</td>
+                            </tr>
+                            <tr>
+                                <td>FYY 692 DO</td>
+                                <td>Expired</td>
+                                <td>Expired</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-section">
+                    <h4>Violation History</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>License Plate</th>
+                                <th>Vehicle Type</th>
+                                <th>Violation</th>
+                                <th>Date/Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FYY 692 DO</td>
+                                <td>Valid</td>
+                                <td>Valid</td>
+                                <td>Valid</td>
+                                <td>Valid</td>
+                            </tr>
+                            <tr>
+                                <td>FYY 692 DO</td>
+                                <td>Expired</td>
+                                <td>Expired</td>
+                                <td>Expired</td>
+                                <td>Expired</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
+        </div>
+    
+    
+    
+    
     </div>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 40px;
+        .container {
             display: flex;
-            justify-content: center;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #0F1587;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        
+        .sidebar .menu li {
+            list-style: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .sidebar .menu li a{
+            text-decoration: none;
+            color: #fff;
+        }
+            .sidebar .menu .active {
+            background: #020547;
+        }
+
+        .sidebar .profile {
+            display: flex;
             align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
         }
 
         .report-modal {
